@@ -1,5 +1,10 @@
-import Header from "@/atomic/organism/Header/Header";
+import DestinationsSection from "./sections/DestinationsSection/DestinationsSection";
+import { PageContainer } from "./styles";
 
 export default function HomeView() {
-  return <div className=""></div>;
+  return (
+    <PageContainer>
+      <DestinationsSection />
+    </PageContainer>
+  );
 }

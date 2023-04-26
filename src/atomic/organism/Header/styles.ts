@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const ComponentContainer = styled.header`
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: sticky;
 
   display: flex;
   justify-content: space-between;
