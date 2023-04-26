@@ -1,3 +1,4 @@
+import { Colors } from "@/foundations/Colors/Colors";
 import styled, { css } from "styled-components";
 
 interface ILabel {
@@ -6,13 +7,15 @@ interface ILabel {
 
 export const Label = styled.span<ILabel>`
   display: inline-flex;
+  position: relative;
   flex-direction: column;
   font-size: 16px;
 
-  color: ${({ isCurrentPath }) => (isCurrentPath ? "#CC338A" : "#64748B")};
+  color: ${({ isCurrentPath }) =>
+    isCurrentPath ? Colors.SECONDARY : Colors.GRAY_400};
 
   &:hover {
-    color: #cc338a;
+    color: ${Colors.SECONDARY};
   }
 
   ${({ isCurrentPath }) =>
@@ -20,10 +23,11 @@ export const Label = styled.span<ILabel>`
     css`
       &::after {
         content: "";
-        margin-top: 8px;
+        position: absolute;
+        translate: 0px 28px;
         width: 16px;
         height: 2px;
-        background-color: #d3539a;
+        background-color: ${Colors.SECONDARY_DARK};
       }
     `}
 `;
