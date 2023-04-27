@@ -7,6 +7,7 @@ export const SectionContainer = styled.section`
   ${SectionPadding}
 
   padding-top: 64px;
+  padding-bottom: 64px;
   display: flex;
   flex-direction: column;
 `;

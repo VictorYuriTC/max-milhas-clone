@@ -1,6 +1,6 @@
 import { BOOKING_TYPES, IDestination } from "@/interfaces/IDestination";
 import DestinationCard from "./components/DestinationCard/DestinationCard";
-import { SectionContainer } from "./styles";
+import { SectionContainer, CardsContainer, PreTitle, Title } from "./styles";
 import Rome1 from "../../../../../../public/images/rome-1.webp";
 import Rome2 from "../../../../../../public/images/rome-2.webp";
 import Rome3 from "../../../../../../public/images/rome-3.webp";
@@ -54,9 +54,19 @@ const mocks: IDestination[] = [
 export default function DestinationsSection() {
   return (
     <SectionContainer>
-      {mocks.map((destination) => (
-        <DestinationCard key={destination.id} destination={destination} />
-      ))}
+      <PreTitle>
+        Viaje mais e viva ao máximo diferentes estilos de viagem!
+      </PreTitle>
+
+      <Title>
+        Todo site em promoção até dia 28/04, além de cupons com super descontos
+        para destinos selecionados.
+      </Title>
+      <CardsContainer>
+        {mocks.map((destination) => (
+          <DestinationCard key={destination.id} destination={destination} />
+        ))}
+      </CardsContainer>
     </SectionContainer>
   );
 }
