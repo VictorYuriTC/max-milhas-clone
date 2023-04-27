@@ -1,20 +1,11 @@
-import AdvantageCard, {
-  IAdvantage,
-} from "./components/AdvantageCard/AdvantageCard";
-import {
-  CardsContainer,
-  ImageContainer,
-  PreTitle,
-  SectionContainer,
-  Title,
-} from "./styles";
 import { RiUserSearchLine } from "react-icons/ri";
 import { BiWorld } from "react-icons/bi";
 import { GiChart } from "react-icons/gi";
 import happyFamilyImg from "../../../../../../public/images/happy-family.webp";
-import Image from "next/image";
+import DefaultHomeSection from "../../components/DefaultHomeSection/DefaultHomeSection";
+import { IDefaultHomeSectionCard } from "../../components/DefaultHomeSection/components/DefaultHomeCard/DefaultHomeCard";
 
-const mocks: IAdvantage[] = [
+const mocks: IDefaultHomeSectionCard[] = [
   {
     id: 1,
     title: "Pesquisa fácil",
@@ -42,30 +33,11 @@ const mocks: IAdvantage[] = [
 
 export default function AdvantagesSection() {
   return (
-    <SectionContainer>
-      <ImageContainer>
-        <Image
-          alt=""
-          src={happyFamilyImg}
-          style={{
-            borderRadius: "16px",
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-          quality={100}
-        />
-      </ImageContainer>
-
-      <PreTitle>Vantagens</PreTitle>
-
-      <Title>Sabe por que a Maxmilhas é o máximo?</Title>
-
-      <CardsContainer>
-        {mocks.map((advantage) => (
-          <AdvantageCard key={advantage.id} advantage={advantage} />
-        ))}
-      </CardsContainer>
-    </SectionContainer>
+    <DefaultHomeSection
+      image={happyFamilyImg}
+      preTitle="Vantages"
+      title="Sabe por que a Maxmilhas é o máximo?"
+      arrayWithCards={mocks}
+    />
   );
 }
