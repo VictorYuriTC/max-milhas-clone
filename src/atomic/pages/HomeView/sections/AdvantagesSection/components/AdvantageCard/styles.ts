@@ -20,12 +20,13 @@ export const TextContentContainer = styled.div`
 
 export const Title = styled.h3`
   color: ${Colors.DARK};
-  font-size: calc(17px + 0.5vw);
+  font-size: calc(13px + 0.5vw);
 `;
 
 export const Description = styled.p`
   padding-top: 8px;
   color: ${Colors.GRAY_200};
-  font-size: calc(16px + 0.25vw);
+  font-size: calc(13px + 0.25vw);
+  line-height: calc(18px + 0.5vw);
   font-weight: 500;
 `;
