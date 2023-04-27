@@ -13,7 +13,15 @@ export const SectionContainer = styled.section`
   padding-bottom: 48px;
 `;
 
+export const ImageContainer = styled.div`
+  height: 200px;
+  @media screen and (min-width: ${Media.MEDIA_560}) {
+    height: 100%;
+  }
+`;
+
 export const PreTitle = styled.h4`
+  padding-top: 24px;
   color: ${Colors.GRAY_400};
   text-align: center;
 `;

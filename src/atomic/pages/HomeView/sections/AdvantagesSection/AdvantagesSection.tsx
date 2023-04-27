@@ -1,10 +1,18 @@
 import AdvantageCard, {
   IAdvantage,
 } from "./components/AdvantageCard/AdvantageCard";
-import { CardsContainer, PreTitle, SectionContainer, Title } from "./styles";
+import {
+  CardsContainer,
+  ImageContainer,
+  PreTitle,
+  SectionContainer,
+  Title,
+} from "./styles";
 import { RiUserSearchLine } from "react-icons/ri";
 import { BiWorld } from "react-icons/bi";
 import { GiChart } from "react-icons/gi";
+import happyFamilyImg from "../../../../../../public/images/happy-family.webp";
+import Image from "next/image";
 
 const mocks: IAdvantage[] = [
   {
@@ -35,6 +43,20 @@ const mocks: IAdvantage[] = [
 export default function AdvantagesSection() {
   return (
     <SectionContainer>
+      <ImageContainer>
+        <Image
+          alt=""
+          src={happyFamilyImg}
+          style={{
+            borderRadius: "16px",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+          quality={100}
+        />
+      </ImageContainer>
+
       <PreTitle>Vantagens</PreTitle>
 
       <Title>Sabe por que a Maxmilhas é o máximo?</Title>

@@ -12,6 +12,12 @@ export const ComponentContainer = styled.div`
   }
 `;
 
+export const PreTitle = styled.h4``;
+
+export const Title = styled.h2`
+  color: ${Colors.BLACK};
+`;
+
 export const ImageContainer = styled.div`
   position: relative;
   aspect-ratio: 4/3;
