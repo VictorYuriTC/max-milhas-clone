@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const ComponentContainer = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 16px;
 `;
 
 export const SvgContainer = styled.div`
@@ -13,7 +14,6 @@ export const SvgContainer = styled.div`
 `;
 
 export const TextContentContainer = styled.div`
-  padding-top: 16px;
   display: flex;
   flex-direction: column;
 `;
@@ -29,4 +29,14 @@ export const Description = styled.p`
   font-size: calc(13px + 0.25vw);
   line-height: calc(18px + 0.5vw);
   font-weight: 500;
+`;
+
+export const LinkContainer = styled.div`
+  text-decoration: underline;
+
+  color: ${Colors.GRAY_300};
+
+  &:hover {
+    color: ${Colors.SECONDARY};
+  }
 `;

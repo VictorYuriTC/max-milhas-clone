@@ -11,6 +11,8 @@ const mocks: IDefaultHomeSectionCard[] = [
     description:
       "Confira as regras da companhia para o seu voo e faça sua solicitação online.",
     svg: <RiSwitchLine style={{ width: "100%", height: "100%" }} />,
+    linkText: "Conferir regras da tarifa",
+    linkHref: "https://www.maxmilhas.com.br/cliente/minhas-viagens-light",
   },
 
   {
@@ -19,6 +21,9 @@ const mocks: IDefaultHomeSectionCard[] = [
     description:
       "Consulte a devolução de reembolsos e créditos de passagens canceladas.",
     svg: <BsTicketPerforated style={{ width: "100%", height: "100%" }} />,
+    linkText: "Consultar reembolso",
+    linkHref:
+      "https://www.maxmilhas.com.br/cliente/minhas-viagens-light/reembolsos",
   },
 
   {
@@ -27,6 +32,8 @@ const mocks: IDefaultHomeSectionCard[] = [
     description:
       "Acompanhe todos os detalhes da sua reserva de hotel, pousada ou resort.",
     svg: <CiWallet style={{ width: "100%", height: "100%" }} />,
+    linkText: "Consultar reservas",
+    linkHref: "https://www.maxmilhas.com.br/hoteis/minhas-reservas",
   },
 ];
 

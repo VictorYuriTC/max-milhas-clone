@@ -2,16 +2,20 @@ import { ReactNode } from "react";
 import {
   ComponentContainer,
   Description,
+  LinkContainer,
   SvgContainer,
   TextContentContainer,
   Title,
 } from "./styles";
+import Link from "next/link";
 
 export interface IDefaultHomeSectionCard {
   id: number;
   svg: ReactNode;
   title: string;
   description: string;
+  linkText?: string;
+  linkHref?: string;
 }
 
 interface IProps {
@@ -28,6 +32,12 @@ export default function DefaultHomeCard(props: IProps) {
 
         <Description>{props.card.description}</Description>
       </TextContentContainer>
+
+      {props.card.linkHref && (
+        <Link href={props.card.linkHref}>
+          <LinkContainer>{props.card.linkText}</LinkContainer>
+        </Link>
+      )}
     </ComponentContainer>
   );
 }
