@@ -1,11 +1,16 @@
 import { Colors } from "@/foundations/Colors/Colors";
 import { Media } from "@/foundations/Media/Media";
 import styled from "styled-components";
+import { SectionPadding } from "../../styles";
 
 export const SectionContainer = styled.section`
+  ${SectionPadding}
+  background-color: ${Colors.GRAY_1100};
+
   display: flex;
   flex-direction: column;
   padding-top: 32px;
+  padding-bottom: 48px;
 `;
 
 export const PreTitle = styled.h4`

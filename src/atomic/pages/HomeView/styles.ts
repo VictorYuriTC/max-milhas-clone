@@ -1,26 +1,34 @@
 import { Media } from "@/foundations/Media/Media";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const PageContainer = styled.main`
-  padding: 0 8px 0 8px;
+export const PageContainer = styled.main``;
+
+export const SectionPadding = css`
+  padding-right: 8px;
+  padding-left: 8px;
 
   @media screen and (min-width: ${Media.MEDIA_360}) {
-    padding: 0 24px 0 24px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   @media screen and (min-width: ${Media.MEDIA_560}) {
-    padding: 0 36px 0 36px;
+    padding-right: 36px;
+    padding-left: 36px;
   }
 
   @media screen and (min-width: ${Media.MEDIA_760}) {
-    padding: 0 48px 0 48px;
+    padding-right: 48px;
+    padding-left: 48px;
   }
 
   @media screen and (min-width: ${Media.MEDIA_1080}) {
-    padding: 0 60px 0 60px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   @media screen and (min-width: ${Media.MEDIA_1200}) {
-    padding: 0 72px 0 72px;
+    padding-right: 72px;
+    padding-left: 72px;
   }
 `;

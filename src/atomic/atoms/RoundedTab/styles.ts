@@ -22,6 +22,6 @@ export const AtomContainer = styled.span<IAtomContainer>`
   color: ${({ color }) => {
     if (color === "gold") return Colors.GOLD_DARK;
 
-    if (color === "success") return Colors.SUCCESS;
+    if (color === "success") return Colors.SUCCESS_DARK;
   }};
 `;
