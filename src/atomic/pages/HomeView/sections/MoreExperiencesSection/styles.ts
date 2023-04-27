@@ -1,15 +1,18 @@
 import { Colors } from "@/foundations/Colors/Colors";
 import { Media } from "@/foundations/Media/Media";
 import styled from "styled-components";
+import { SectionPadding } from "../../styles";
 
 export const SectionContainer = styled.section`
+  ${SectionPadding}
+
   padding-top: 64px;
   display: flex;
   flex-direction: column;
 `;
 
 export const Title = styled.h2`
-  color: ${Colors.DARK};
+  color: ${Colors.BLACK};
   font-size: calc(20px + 0.5vw);
   font-weight: 700;
 `;

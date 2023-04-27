@@ -1,4 +1,6 @@
 export enum Colors {
+  BLACK = "#050C16",
+
   DARK = "#1E2A3B",
   LIGHT = "#f2f6f7",
 
@@ -7,7 +9,9 @@ export enum Colors {
   SECONDARY = "#cc338a",
   SECONDARY_DARK = "#d3539a",
 
-  SUCCESS = "#238556",
+  SUCCESS_DARK = "#238556",
+  SUCCESS = "#50AD34",
+  SUCCESS_LIGHT = "#97DA82",
 
   GOLD_DARK = "#7E5307",
   GOLD_LIGHT = "#fcf7ed",
@@ -18,4 +22,5 @@ export enum Colors {
   GRAY_500 = "#8E9AAA",
   GRAY_800 = "#CBD4E1",
   GRAY_900 = "#D9E1EC",
+  GRAY_1100 = "#F6F8FC",
 }

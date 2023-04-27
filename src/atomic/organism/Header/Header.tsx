@@ -7,7 +7,7 @@ import UserMenuElement from "./components/UserMenuElement/UserMenuElement";
 
 export default function Header() {
   return (
-    <ComponentContainer className="">
+    <ComponentContainer>
       <LinksContainer>
         <Link href="/">
           <LogoContainer>
