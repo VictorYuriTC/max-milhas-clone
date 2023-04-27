@@ -12,6 +12,7 @@ export enum Colors {
   GOLD_DARK = "#7E5307",
   GOLD_LIGHT = "#fcf7ed",
 
+  GRAY_200 = "#475872",
   GRAY_300 = "#515E71",
   GRAY_400 = "#64748B",
   GRAY_500 = "#8E9AAA",

@@ -12,7 +12,7 @@ import {
   ImageContainer,
   TextContentContainer,
 } from "./styles";
-import RoundedTab from "@/atomic/organism/atoms/RoundedTab/RoundedTab";
+import RoundedTab from "@/atomic/atoms/RoundedTab/RoundedTab";
 import Image from "next/image";
 
 interface IProps {
