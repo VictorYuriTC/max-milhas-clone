@@ -1,4 +1,4 @@
-import Header from "@/atomic/organism/Header/Header";
+import Header from "@/atomic/organisms/Header/Header";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 

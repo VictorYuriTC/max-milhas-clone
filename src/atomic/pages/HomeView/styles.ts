@@ -3,7 +3,11 @@ import styled, { css } from "styled-components";
 
 export const PageContainer = styled.main``;
 
-export const SectionPadding = css`
+interface ISectionPadding {
+  selectedSpacing?: "margin" | "padding";
+}
+
+export const SectionPadding = css<ISectionPadding>`
   padding-right: 8px;
   padding-left: 8px;
 
