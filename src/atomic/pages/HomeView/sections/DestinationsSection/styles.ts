@@ -4,7 +4,6 @@ import { Colors } from "@/foundations/Colors/Colors";
 
 export const SectionContainer = styled.section`
   ${SectionPadding}
-  padding-top: 100px;
 `;
 
 export const PreTitle = styled.h4`
