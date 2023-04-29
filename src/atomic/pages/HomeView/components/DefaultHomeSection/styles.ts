@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { SectionPadding } from "../../styles";
+import { SectionPaddingX } from "../../styles";
 import { Media } from "@/foundations/Media/Media";
 import { Colors } from "@/foundations/Colors/Colors";
 
 export const SectionContainer = styled.section`
-  ${SectionPadding}
+  ${SectionPaddingX}
   background-color: ${Colors.GRAY_1100};
 
   display: flex;

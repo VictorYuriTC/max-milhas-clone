@@ -1,9 +1,9 @@
 import { Colors } from "@/foundations/Colors/Colors";
 import styled from "styled-components";
-import { SectionPadding } from "../../styles";
+import { SectionPaddingX } from "../../styles";
 
 export const SectionContainer = styled.section`
-  ${SectionPadding}
+  ${SectionPaddingX}
 `;
 
 export const SearchMenu = styled.div`

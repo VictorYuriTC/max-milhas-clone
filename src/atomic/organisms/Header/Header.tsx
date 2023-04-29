@@ -1,13 +1,24 @@
 import Image from "next/image";
 import HeaderLink from "./components/HeaderLink/HeaderLink";
 import LogoImg from "../../../../public/images/max-milhas-logo.png";
-import { ComponentContainer, LinksContainer, LogoContainer } from "./styles";
+import {
+  OrganismContainer,
+  LinksContainer,
+  LogoContainer,
+  IOrganismContainer,
+} from "./styles";
 import Link from "next/link";
 import UserMenuElement from "./components/UserMenuElement/UserMenuElement";
 
-export default function Header() {
+interface IProps {
+  organismContainer?: IOrganismContainer;
+}
+
+export default function Header(props: IProps) {
   return (
-    <ComponentContainer>
+    <OrganismContainer
+      paddingX={props.organismContainer?.paddingX}
+      paddingY={props.organismContainer?.paddingY}>
       <LinksContainer>
         <Link href="/">
           <LogoContainer>
@@ -41,6 +52,6 @@ export default function Header() {
           <UserMenuElement />
         </section>
       </LinksContainer>
-    </ComponentContainer>
+    </OrganismContainer>
   );
 }

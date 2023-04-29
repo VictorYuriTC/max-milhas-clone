@@ -3,11 +3,11 @@ import styled, { css } from "styled-components";
 
 export const PageContainer = styled.main``;
 
-interface ISectionPadding {
+interface ISectionPaddingX {
   selectedSpacing?: "margin" | "padding";
 }
 
-export const SectionPadding = css<ISectionPadding>`
+export const SectionPaddingX = css<ISectionPaddingX>`
   padding-right: 8px;
   padding-left: 8px;
 
@@ -35,4 +35,9 @@ export const SectionPadding = css<ISectionPadding>`
     padding-right: 72px;
     padding-left: 72px;
   }
+`;
+
+export const SectionPaddingY = css`
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;

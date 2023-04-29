@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { SectionPadding } from "../../styles";
+import { SectionPaddingX } from "../../styles";
 import { Colors } from "@/foundations/Colors/Colors";
 
 export const SectionContainer = styled.section`
-  ${SectionPadding}
+  ${SectionPaddingX}
 `;
 
 export const PreTitle = styled.h4`

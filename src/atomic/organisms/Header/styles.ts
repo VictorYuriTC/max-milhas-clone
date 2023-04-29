@@ -1,7 +1,14 @@
-import { Colors } from "@/foundations/Colors/Colors";
 import styled from "styled-components";
 
-export const ComponentContainer = styled.header`
+export interface IOrganismContainer {
+  paddingX?: any;
+  paddingY?: any;
+}
+
+export const OrganismContainer = styled.header<IOrganismContainer>`
+  ${({ paddingX }) => paddingX}
+  ${({ paddingY }) => paddingY}
+
   position: fixed;
   background-color: white;
   top: 0;
@@ -10,7 +17,6 @@ export const ComponentContainer = styled.header`
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 16px 84px 16px 84px;
 `;
 
 export const LogoContainer = styled.div`
