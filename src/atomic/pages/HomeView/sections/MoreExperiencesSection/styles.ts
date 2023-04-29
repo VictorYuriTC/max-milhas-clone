@@ -1,10 +1,10 @@
 import { Colors } from "@/foundations/Colors/Colors";
 import { Media } from "@/foundations/Media/Media";
 import styled from "styled-components";
-import { SectionPadding } from "../../styles";
+import { SectionPaddingX } from "../../styles";
 
 export const SectionContainer = styled.section`
-  ${SectionPadding}
+  ${SectionPaddingX}
 
   padding-top: 64px;
   padding-bottom: 64px;
